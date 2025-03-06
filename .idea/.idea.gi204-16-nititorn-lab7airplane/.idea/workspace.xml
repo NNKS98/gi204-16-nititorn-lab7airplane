@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="49d5c75d-83f2-4804-8791-7297c3acd198" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.gi204-16-nititorn-lab7airplane/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gi204-16-nititorn-lab7airplane/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/6-3-2568 15-13-31.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/6-3-2568 15-13-31.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Airplane.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Airplane.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1741250675399</updated>
-      <workItem from="1741250675904" duration="1259000" />
+      <workItem from="1741250675904" duration="3022000" />
     </task>
     <servers />
   </component>

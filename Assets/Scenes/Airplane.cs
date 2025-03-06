@@ -7,6 +7,9 @@ public class Airplane : MonoBehaviour
     [SerializeField] private float liftBooster = 0.5f;
     [SerializeField] private float drag = 0.001f;
     [SerializeField] private float angularDrag = 0.001f;
+    [SerializeField] private float yamPower = 50f;
+    [SerializeField] private float pitchPower = 50f;
+    [SerializeField] private float rollPower = 30f;
     
     void Start()
     {
@@ -19,7 +22,21 @@ public class Airplane : MonoBehaviour
         {
             rb.AddForce(transform.forward * enginePower);
         }
+        
         Vector3 lift = Vector3.Project(rb.linearVelocity, transform.forward);
         rb.AddForce(transform.up * lift.magnitude * liftBooster);
+
+        rb.linearDamping = rb.linearVelocity.magnitude * drag;
+        rb.angularDamping = rb.linearVelocity.magnitude * angularDrag;
+
+        float yaw = Input.GetAxis("Horizontal") * yamPower;
+        float pitch = Input.GetAxis("Vertical") * pitchPower;
+        float roll = Input.GetAxis("Roll") * rollPower;
+        
+        rb.AddTorque(transform.up * yaw);
+        rb.AddTorque(transform.right * pitch);
+        rb.AddTorque(transform.forward * roll);
+        
+        
     }
 }
